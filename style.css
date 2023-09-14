@@ -1,0 +1,387 @@
+  /*--------------------Fonts-------------------------------*/
+
+  /* lato-regular - latin */
+  @font-face {
+      font-display: swap;
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      src: url('fonts/lato-v24-latin-regular.woff2') format('woff2');
+  }
+
+  /* lato-italic - latin */
+  @font-face {
+      font-display: swap;
+      font-family: 'Lato';
+      font-style: italic;
+      font-weight: 400;
+      src: url('fonts/lato-v24-latin-italic.woff2') format('woff2');
+  }
+
+  /* bilbo-regular - latin */
+  @font-face {
+      font-display: swap;
+      font-family: 'Bilbo';
+      font-style: normal;
+      font-weight: 400;
+      src: url('fonts/bilbo-v20-latin-regular.woff2') format('woff2');
+  }
+
+  /*--------------------Paramétrage-------------------------------*/
+
+  body {
+      font-family: 'Lato';
+      font-size: 14px;
+      font-style: italic;
+      color: #484848;
+      background-color: #f2f2f2;
+  }
+
+  * {
+      margin: 0;
+      padding: 0;
+  }
+
+  .container {
+      max-width: 1130px;
+      width: 100%;
+      margin: 0 auto;
+  }
+
+  ul {
+      list-style-type: none;
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+  h1,
+  h2 {
+      font-family: 'Bilbo';
+  }
+
+  .orange {
+      color: #f48c05;
+  }
+
+  /*-----------------------HEADER----------------------------*/
+
+  .flex-bandeau {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  #bandeau {
+      background-color: #18191b;
+  }
+
+  #menuPrincipal ul {
+      display: flex;
+      margin-right: 20px;
+  }
+
+  #menuPrincipal ul li {
+      margin-left: 10px;
+  }
+
+  #menuPrincipal ul li a {
+      color: white;
+      font-family: 'Bilbo';
+      font-size: 1.5rem;
+  }
+
+  #menuPrincipal ul li a:hover,
+  #menuPrincipal ul li a.choix {
+      color: #f48c05;
+  }
+
+  #menuPrincipal.active ul {
+      display: flex;
+  }
+
+  /* BURGER  */
+  #menuBurger {
+      display: none;
+      /* Par défaut, le menu burger est caché */
+      flex-direction: column;
+      cursor: pointer;
+      padding: 10px;
+      color: white;
+  }
+
+
+
+  /*-----------------------MAIN----------------------------*/
+  /* Section A Propos  */
+  #apropos {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 20px 0;
+  }
+
+  #apropos .presentation {
+      width: 45%;
+      display: flex;
+  }
+
+  #apropos .presentation img {
+      width: 25%;
+  }
+
+  #apropos .presentation h2 {
+      font-size: 2rem;
+  }
+
+  #apropos .presentation .text-apropos p {
+      font-family: 'Lato'
+  }
+
+  #apropos .presentation .text-apropos {
+      width: 75%;
+  }
+
+  /* Section bienvenue  */
+  #bienvenue {
+      border-top: 2px dashed black;
+      border-bottom: 2px dashed black;
+      text-align: center;
+      padding: 20px 0;
+      background-color: white;
+  }
+
+  #bienvenue h1 {
+      font-size: 2.8rem;
+  }
+
+  #bienvenue small {
+      font-family: 'Lato';
+      font-style: italic;
+      font-size: 1.2rem;
+  }
+
+  /* Section idée et news  */
+
+  /* idee  */
+  #ideesnews {
+      display: flex;
+      padding: 20px 0;
+  }
+
+  #idees h2 {
+      width: 100%;
+
+  }
+
+  #idees {
+      width: 65%;
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  #idees .idee {
+      width: 30%;
+  }
+
+  #idees .idee img {
+      border: 5px solid white;
+  }
+
+  #idees .idee h3 {
+      color: #f48c05;
+      font-family: 'Lato';
+      font-style: italic;
+      font-weight: 200;
+      margin: 7.5px 0;
+  }
+
+  p.boutonplus {
+      width: 100%;
+      margin: 15px 0;
+  }
+
+  p.boutonplus a {
+      color: black;
+      font-family: 'Bilbo';
+      font-size: 1.5rem;
+  }
+
+  #idees h2,
+  #news h2 {
+      width: 100%;
+      font-size: 2rem;
+      margin-bottom: 15px;
+  }
+
+  /* news  */
+
+  #news {
+      width: 30%;
+  }
+
+  #news .date {
+      background-image: url(imagesStartup/date.png);
+      background-repeat: no-repeat;
+      padding-top: 10px;
+  }
+
+  #news #jours {
+      font-family: 'Lato';
+      margin-left: 10px;
+      margin-right: 15px;
+  }
+
+  #news h3 {
+      font-family: 'Lato';
+      font-style: italic;
+      font-weight: 200;
+      margin: 5px 0;
+  }
+
+  #news p {
+      font-family: 'Lato';
+  }
+
+
+  /*-------------------------- FOOTER ----------------- */
+
+  #pied {
+      background-color: white;
+      padding: 40px 0;
+
+  }
+
+  #pied #piedpage {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  #pied #piedpage .resseau {
+      display: flex;
+      align-items: center;
+  }
+
+  #pied #piedpage .resseau a {
+      padding: 0 5px;
+  }
+
+
+
+  /*--------------------------SLIDER----------------- */
+
+
+  .nivo-caption {
+      background-color: transparent;
+      color: #000;
+      left: 75%;
+      top: 20%;
+  }
+
+
+  .theme-default .nivo-controlNav {
+      position: absolute;
+      bottom: 50%;
+      left: 70%;
+      z-index: 12000;
+  }
+
+  .theme-default .nivo-controlNav a {
+      display: inline-block;
+      width: 36px;
+      height: 36px;
+      background: url(imagesStartup/pagination.png) right 0 no-repeat;
+  }
+
+  .theme-default .nivo-controlNav a.active {
+      display: inline-block;
+      width: 36px;
+      height: 36px;
+      background: url(imagesStartup/pagination.png) no-repeat;
+  }
+
+
+
+  /*-------------------------- MEDIA QUERY----------------- */
+
+
+
+  /* Media Query pour écrans de 768px */
+  @media (max-width: 768px) {
+      /* règles CSS spécifiques à 768px */
+
+      /* AUTER  */
+
+      .slider-wrapper {
+          display: none;
+      }
+
+
+
+      #bandeau .container {
+          flex-direction: column;
+          align-items: center;
+      }
+
+
+      /* ---------------HEADER ------------ */
+      #menuPrincipal ul {
+          display: none;
+          width: 100%;
+      }
+
+      #menuPrincipal.active ul {
+          display: flex;
+          flex-direction: column;
+      }
+
+      #menuBurger {
+          display: block;
+      }
+
+
+      /* section 1  */
+
+      #apropos.container{
+        width: 90%;
+      }
+
+      #apropos {
+        flex-direction: column; /* Change la direction en colonne */
+        align-items: center; /* Centre les éléments verticalement */
+      }
+    
+      #apropos .presentation {
+        width: 100%; /* Remplit la largeur disponible */
+        margin-bottom: 20px; /* Ajoute de l'espace entre les articles */
+      }
+    }
+
+    
+      /* section 2 */
+
+      #bienvenue.container{
+        width: 90%;
+      }
+      /* section 3  */
+
+      #ideesnews {
+          display: flex;
+          padding: 20px 0;
+          flex-direction: column;
+          padding-left: 5%;
+      }
+
+      #idees,
+      #news {
+          width: 100%;
+      }
+
+      /* FOOTER  */
+
+
+      #pied {
+          padding: 20px 20px;
+      }
+
+  
